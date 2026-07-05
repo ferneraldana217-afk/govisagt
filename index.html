@@ -1,4 +1,14 @@
-
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Next Visa 502 — Visas de Turismo a EE.UU., México y Canadá | Guatemala</title>
+<meta name="description" content="Asesoría migratoria profesional en Guatemala: visa de turismo y negocios B1/B2 para Estados Unidos, visa de visitante para México y Canadá. Llenado de DS-160, preparación para entrevista y monitoreo de citas.">
+<meta property="og:title" content="Next Visa 502 — Trámites de Visas de Turismo">
+<meta property="og:description" content="Tramita tu visa a Estados Unidos, México o Canadá con expertos. Respuesta en menos de 24 horas.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23071428'/%3E%3Ctext x='32' y='44' font-size='30' text-anchor='middle' fill='%23F5C518' font-family='Arial' font-weight='900'%3ENV%3C/text%3E%3C/svg%3E">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -9,8 +19,12 @@
 }
 html{scroll-behavior:smooth}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--white);color:var(--g900);line-height:1.6;font-size:15px}
-nav{background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:70px;position:sticky;top:0;z-index:100;border-bottom:2px solid var(--gold)}
-.nav-cta{background:var(--gold);color:var(--navy);border:none;border-radius:6px;padding:10px 22px;font-size:14px;font-weight:800;cursor:pointer;transition:background 0.2s;text-transform:uppercase;letter-spacing:0.5px}
+nav{background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:84px;position:sticky;top:0;z-index:100;border-bottom:2px solid var(--gold)}
+.logo{width:210px;height:74px;display:block}
+.flag{display:inline-block;border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,0.15);flex-shrink:0}
+.hflag .flag{width:27px;height:18px}
+.ctab .flag{width:26px;height:17px}
+.nav-cta{background:var(--gold);color:var(--navy);border:none;border-radius:6px;padding:10px 22px;font-size:14px;font-weight:800;cursor:pointer;transition:background 0.2s;text-transform:uppercase;letter-spacing:0.5px;white-space:nowrap}
 .nav-cta:hover{background:#FFD740}
 .nav-links{display:flex;gap:28px}
 .nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:14px;font-weight:500;transition:color 0.2s}
@@ -48,7 +62,7 @@ section{padding:64px 40px}
 .scard{border:2px solid var(--g200);border-radius:var(--rlg);padding:28px;cursor:pointer;transition:all 0.2s;background:var(--white);position:relative;overflow:hidden}
 .scard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--orange))}
 .scard:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 12px 32px rgba(7,20,40,0.12)}
-.scard-flag{font-size:36px;margin-bottom:14px;display:block}
+.scard-flag{width:72px;height:48px;margin-bottom:14px;display:block}
 .scard h3{font-size:18px;font-weight:800;color:var(--navy);margin-bottom:8px;text-transform:uppercase}
 .scard p{font-size:13px;color:var(--g400);line-height:1.65;margin-bottom:16px}
 .scard-tags{display:flex;flex-wrap:wrap;gap:6px}
@@ -103,26 +117,14 @@ section{padding:64px 40px}
 .req{color:var(--orange)}
 .field input,.field select,.field textarea{border:2px solid var(--g200);border-radius:6px;padding:10px 12px;font-size:14px;color:var(--g900);background:var(--white);outline:none;transition:border-color 0.18s;font-family:inherit}
 .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}
+.field input.invalid,.field select.invalid,.field textarea.invalid{border-color:#D64545;background:#FFF6F6}
+.step-error{display:none;background:#FDEBEB;border-left:3px solid #D64545;padding:10px 14px;margin-top:16px;font-size:13px;color:#8A2626;font-weight:600}
+.step-error.visible{display:block}
 .field textarea{resize:vertical;min-height:80px}
 .field .hint{font-size:11px;color:var(--g400);line-height:1.5}
 .info-banner{background:#FFFBEC;border-left:3px solid var(--gold);padding:12px 16px;margin-bottom:18px}
 .info-banner p{font-size:13px;color:var(--navy-mid,#0D2040);line-height:1.6}
 .info-banner strong{font-weight:700;color:var(--navy)}
-.upload-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
-.upload-zone{border:2px dashed var(--g200);border-radius:10px;padding:20px 14px;text-align:center;cursor:pointer;transition:all 0.2s;position:relative;overflow:hidden;background:var(--white)}
-.upload-zone:hover{border-color:var(--gold);background:#FFFBEC}
-.upload-zone.has-file{border-color:var(--green);border-style:solid;background:var(--green-pale)}
-.upload-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer}
-.upload-icon{font-size:26px;margin-bottom:6px}
-.upload-zone p{font-size:12px;color:var(--g400)}
-.upload-zone strong{color:var(--orange)}
-.upload-zone .fname{font-size:12px;color:var(--green);font-weight:700;margin-top:4px;display:none}
-.upload-zone.has-file .fname{display:block}
-.upload-zone.has-file .up-default{display:none}
-.eta-notice{background:var(--green-pale);border-left:3px solid var(--green);padding:12px 16px;margin-bottom:14px}
-.eta-notice p{font-size:13px;color:#0D4D2A}
-.photo-notice{background:#FFFBEC;border-left:3px solid var(--gold);padding:12px 16px;margin-bottom:14px}
-.photo-notice p{font-size:13px;color:#5A4200}
 .radio-group{display:flex;flex-direction:column;gap:8px}
 .radio-opt{display:flex;align-items:center;gap:10px;border:2px solid var(--g200);border-radius:6px;padding:10px 14px;cursor:pointer;transition:all 0.15s}
 .radio-opt:hover{border-color:var(--gold);background:#FFFBEC}
@@ -175,26 +177,66 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
 .footer-links{display:flex;gap:20px}
 .footer-links a{font-size:12px;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s}
 .footer-links a:hover{color:var(--gold)}
+@media(max-width:960px){.nav-links{display:none}}
 @media(max-width:720px){
-  nav{padding:0 16px}.nav-links{display:none}
+  nav{padding:0 16px;height:72px}.nav-links{display:none}
+  .logo{width:150px;height:53px}
+  .nav-cta{padding:8px 12px;font-size:12px;letter-spacing:0.3px}
   .hero{grid-template-columns:1fr;padding:40px 16px}.hero h1{font-size:30px}
   section,.why-section,.contact-section{padding:48px 16px}
   .services-grid,.why-grid,.process-grid,.contact-grid{grid-template-columns:1fr}
-  .form-row,.form-row.three,.upload-grid,.vtype-grid{grid-template-columns:1fr}
+  .form-row,.form-row.three,.vtype-grid{grid-template-columns:1fr}
+  .country-tabs{flex-wrap:wrap}
+  .wa-float{padding:13px}.wa-txt{display:none}
   footer{flex-direction:column;gap:10px;text-align:center;padding:20px 16px}
 }
 </style>
+</head>
+<body>
+
+<!-- Banderas SVG (símbolos reutilizables) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="flag-us" viewBox="0 0 60 40">
+      <rect width="60" height="40" fill="#fff"/>
+      <g fill="#B22234">
+        <rect y="0" width="60" height="3.08"/><rect y="6.15" width="60" height="3.08"/><rect y="12.31" width="60" height="3.08"/><rect y="18.46" width="60" height="3.08"/><rect y="24.62" width="60" height="3.08"/><rect y="30.77" width="60" height="3.08"/><rect y="36.92" width="60" height="3.08"/>
+      </g>
+      <rect width="24" height="21.54" fill="#3C3B6E"/>
+      <g fill="#fff">
+        <circle cx="4" cy="4" r="1.1"/><circle cx="9" cy="4" r="1.1"/><circle cx="14" cy="4" r="1.1"/><circle cx="19" cy="4" r="1.1"/>
+        <circle cx="6.5" cy="8" r="1.1"/><circle cx="11.5" cy="8" r="1.1"/><circle cx="16.5" cy="8" r="1.1"/>
+        <circle cx="4" cy="12" r="1.1"/><circle cx="9" cy="12" r="1.1"/><circle cx="14" cy="12" r="1.1"/><circle cx="19" cy="12" r="1.1"/>
+        <circle cx="6.5" cy="16" r="1.1"/><circle cx="11.5" cy="16" r="1.1"/><circle cx="16.5" cy="16" r="1.1"/>
+      </g>
+    </symbol>
+    <symbol id="flag-mx" viewBox="0 0 60 40">
+      <rect width="20" height="40" fill="#006847"/>
+      <rect x="20" width="20" height="40" fill="#fff"/>
+      <rect x="40" width="20" height="40" fill="#CE1126"/>
+      <circle cx="30" cy="20" r="5.5" fill="none" stroke="#8C6239" stroke-width="1.2"/>
+      <circle cx="30" cy="19" r="2.6" fill="#8C6239"/>
+      <path d="M26 23q4 2.6 8 0" stroke="#4E7A27" stroke-width="1.4" fill="none"/>
+    </symbol>
+    <symbol id="flag-ca" viewBox="0 0 60 40">
+      <rect width="60" height="40" fill="#fff"/>
+      <rect width="15" height="40" fill="#D52B1E"/>
+      <rect x="45" width="15" height="40" fill="#D52B1E"/>
+      <path fill="#D52B1E" d="M30 7l1.8 4.5 3.6-2.2-1.3 5 4.2-1 -0.9 3.6 4.6-0.4-3.2 3.6 2.3 1.8-6 1.4 0.5 4.6-4.1-2.7-1.5 3.6-1.5-3.6-4.1 2.7 0.5-4.6-6-1.4 2.3-1.8-3.2-3.6 4.6 0.4-0.9-3.6 4.2 1-1.3-5 3.6 2.2z"/>
+    </symbol>
+  </defs>
+</svg>
 
 <!-- WhatsApp flotante -->
-<a class="wa-float" href="https://wa.me/50231153132" target="_blank">
+<a class="wa-float" href="https://wa.me/50254050683" target="_blank">
   <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  WhatsApp · +502 3115-3132
+  <span class="wa-txt">WhatsApp · +502 5405-0683</span>
 </a>
 
 <!-- NAV -->
 <nav>
   <div style="display:flex;align-items:center">
-    <svg width="160" height="56" viewBox="0 0 160 56" xmlns="http://www.w3.org/2000/svg">
+    <svg class="logo" viewBox="0 0 160 56" xmlns="http://www.w3.org/2000/svg">
       <rect x="0" y="2" width="156" height="52" rx="10" fill="#071428"/>
       <circle cx="26" cy="28" r="16" fill="#0D2A6A" stroke="#1A5FCC" stroke-width="1.5"/>
       <ellipse cx="26" cy="28" rx="6" ry="16" fill="none" stroke="#2A7AEE" stroke-width="1"/>
@@ -206,7 +248,7 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
       <text x="46" y="34" fill="#FFFFFF" font-size="17" font-family="'Arial Black',Arial" font-weight="900">Next</text>
       <text x="88" y="34" fill="#F5C518" font-size="17" font-family="'Arial Black',Arial" font-weight="900">Visa</text>
       <text x="60" y="48" fill="#F5C518" font-size="13" font-family="'Arial Black',Arial" font-weight="900">502</text>
-      <text x="46" y="54" fill="#6080A0" font-size="5.5" font-family="Arial" letter-spacing="0.4">TRÁMITES MIGRATORIOS &amp; VISAS DE TURISMO</text>
+      <text x="46" y="54" fill="#6080A0" font-size="4.5" font-family="Arial" letter-spacing="0.2">TRÁMITES MIGRATORIOS &amp; VISAS DE TURISMO</text>
     </svg>
   </div>
   <div class="nav-links">
@@ -225,13 +267,13 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
     <h1>¡No pierdas <span class="hl-orange">más</span><br>tiempo!<br><span class="highlight">Next Visa 502</span><br>te ayuda</h1>
     <p class="hero-desc">Tramita tu visa de turismo o negocios a Estados Unidos, México o Canadá con expertos. Llenado profesional del DS-160, preparación para entrevista y monitoreo constante de citas.</p>
     <div class="hero-flags">
-      <div class="hflag">🇺🇸 EE.UU.</div>
-      <div class="hflag">🇲🇽 México</div>
-      <div class="hflag">🇨🇦 Canadá</div>
+      <div class="hflag"><svg class="flag"><use href="#flag-us"/></svg> EE.UU.</div>
+      <div class="hflag"><svg class="flag"><use href="#flag-mx"/></svg> México</div>
+      <div class="hflag"><svg class="flag"><use href="#flag-ca"/></svg> Canadá</div>
     </div>
     <div class="hero-btns">
       <button class="btn-gold" onclick="document.getElementById('solicitud').scrollIntoView({behavior:'smooth'})">¡Asegura tu asesoría!</button>
-      <a class="btn-ghost" href="https://wa.me/50231153132" target="_blank" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none">💬 Escríbenos ahora</a>
+      <a class="btn-ghost" href="https://wa.me/50254050683" target="_blank" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none">💬 Escríbenos ahora</a>
     </div>
   </div>
   <div class="hero-stats-card">
@@ -265,19 +307,19 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
   <p class="section-sub">Asesoría completa para los principales destinos. No te arriesgues haciéndolo solo.</p>
   <div class="services-grid">
     <div class="scard" onclick="document.getElementById('solicitud').scrollIntoView({behavior:'smooth'});setCountry('us')">
-      <div class="scard-arrow">→</div><span class="scard-flag">🇺🇸</span>
+      <div class="scard-arrow">→</div><svg class="flag scard-flag"><use href="#flag-us"/></svg>
       <h3>Estados Unidos</h3>
       <p>Visa de turismo y negocios B1/B2. Llenado profesional del DS-160 y preparación para entrevista consular.</p>
       <div class="scard-tags"><span class="stag">B1/B2</span></div>
     </div>
     <div class="scard" onclick="document.getElementById('solicitud').scrollIntoView({behavior:'smooth'});setCountry('mx')">
-      <div class="scard-arrow">→</div><span class="scard-flag">🇲🇽</span>
+      <div class="scard-arrow">→</div><svg class="flag scard-flag"><use href="#flag-mx"/></svg>
       <h3>México</h3>
       <p>Visa de turismo de corto y largo plazo (6 meses a 10 años). Orientación completa en documentación y proceso consular.</p>
       <div class="scard-tags"><span class="stag">Visitante</span></div>
     </div>
     <div class="scard" onclick="document.getElementById('solicitud').scrollIntoView({behavior:'smooth'});setCountry('ca')">
-      <div class="scard-arrow">→</div><span class="scard-flag">🇨🇦</span>
+      <div class="scard-arrow">→</div><svg class="flag scard-flag"><use href="#flag-ca"/></svg>
       <h3>Canadá</h3>
       <p>Visa de turismo. Orientación completa en documentación y proceso consular.</p>
       <div class="scard-tags"><span class="stag">Visitante</span></div>
@@ -319,9 +361,9 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
   <div style="margin-top:28px">
     <div style="font-size:12px;font-weight:700;color:var(--g700);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:10px">1. País de destino</div>
     <div class="country-tabs">
-      <button class="ctab active" id="tab-us" onclick="setCountry('us')"><span>🇺🇸</span> Estados Unidos</button>
-      <button class="ctab" id="tab-mx" onclick="setCountry('mx')"><span>🇲🇽</span> México</button>
-      <button class="ctab" id="tab-ca" onclick="setCountry('ca')"><span>🇨🇦</span> Canadá</button>
+      <button class="ctab active" id="tab-us" onclick="setCountry('us')"><svg class="flag"><use href="#flag-us"/></svg> Estados Unidos</button>
+      <button class="ctab" id="tab-mx" onclick="setCountry('mx')"><svg class="flag"><use href="#flag-mx"/></svg> México</button>
+      <button class="ctab" id="tab-ca" onclick="setCountry('ca')"><svg class="flag"><use href="#flag-ca"/></svg> Canadá</button>
     </div>
     <div style="font-size:12px;font-weight:700;color:var(--g700);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:10px">2. Tipo de visa</div>
     <div id="vt-us" class="vtype-grid">
@@ -339,11 +381,9 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
     <div class="form-prog" id="form-prog">
       <div class="prog-step active" id="ps-1"><div class="prog-num">1</div>Datos personales</div>
       <div class="prog-conn"></div>
-      <div class="prog-step" id="ps-2"><div class="prog-num">2</div>Documentos</div>
+      <div class="prog-step" id="ps-2"><div class="prog-num">2</div>Pasaporte y viaje</div>
       <div class="prog-conn"></div>
-      <div class="prog-step" id="ps-3"><div class="prog-num">3</div>Viaje</div>
-      <div class="prog-conn"></div>
-      <div class="prog-step" id="ps-4"><div class="prog-num">4</div>Revisión</div>
+      <div class="prog-step" id="ps-3"><div class="prog-num">3</div>Revisión</div>
     </div>
     <div class="form-body">
       <div class="fstep-content active" id="fs-1">
@@ -363,51 +403,26 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
         </div>
         <div class="form-row">
           <div class="field"><label>Correo electrónico <span class="req">*</span></label><input type="email" placeholder="correo@ejemplo.com" id="f-email"></div>
-          <div class="field"><label>WhatsApp / Teléfono <span class="req">*</span></label><input type="tel" placeholder="+502 3115-3132" id="f-tel"></div>
+          <div class="field"><label>WhatsApp / Teléfono <span class="req">*</span></label><input type="tel" placeholder="+502 5405-0683" id="f-tel"></div>
         </div>
         <div class="form-row full">
           <div class="field"><label>Dirección de residencia <span class="req">*</span></label><input type="text" placeholder="Dirección completa" id="f-dir"></div>
         </div>
+        <div class="form-row">
+          <div class="field"><label>Horario preferido para contactarte <span class="req">*</span></label>
+            <select id="f-horario"><option value="">Seleccionar</option><option>Mañana (8:00 am – 12:00 pm)</option><option>Tarde (12:00 pm – 6:00 pm)</option><option>Cualquier horario</option></select>
+          </div>
+          <div class="field"><label>Medio de contacto preferido</label>
+            <select id="f-medio"><option value="">Seleccionar</option><option>WhatsApp</option><option>Llamada</option><option>Correo electrónico</option></select>
+          </div>
+        </div>
       </div>
 
       <div class="fstep-content" id="fs-2">
-        <p style="font-size:13px;color:var(--g400);margin-bottom:14px">Formatos: JPG, PNG, PDF · máx. 5MB por archivo</p>
-        <div id="photo-notice-wrap">
-          <div class="photo-notice"><p id="photo-notice-txt"><strong>📷 Fotografía personal requerida:</strong> Fondo blanco, frente, sin lentes ni gorras. Tomada en los últimos 6 meses.</p></div>
-        </div>
-        <div class="upload-grid">
-          <div class="field"><label>Pasaporte — página principal <span class="req">*</span></label>
-            <div class="upload-zone" id="uz-1"><input type="file" accept="image/*,.pdf" onchange="handleUp(this,'uz-1','fn-1')">
-              <div class="up-default"><div class="upload-icon">🛂</div><p><strong>Subir pasaporte</strong><br>Arrastra o haz clic</p></div>
-              <div class="fname" id="fn-1"></div>
-            </div>
-          </div>
-          <div class="field"><label>DPI / Identidad <span class="req">*</span></label>
-            <div class="upload-zone" id="uz-2"><input type="file" accept="image/*,.pdf" onchange="handleUp(this,'uz-2','fn-2')">
-              <div class="up-default"><div class="upload-icon">🪪</div><p><strong>Subir DPI</strong><br>Frente y reverso</p></div>
-              <div class="fname" id="fn-2"></div>
-            </div>
-          </div>
-          <div class="field" id="foto-cell"><label>Fotografía personal <span class="req">*</span></label>
-            <div class="upload-zone" id="uz-3"><input type="file" accept="image/*" onchange="handleUp(this,'uz-3','fn-3')">
-              <div class="up-default"><div class="upload-icon">📷</div><p><strong>Foto tipo visa</strong><br>Fondo blanco, reciente</p></div>
-              <div class="fname" id="fn-3"></div>
-            </div>
-          </div>
-          <div class="field"><label>Comprobante de ingresos</label>
-            <div class="upload-zone" id="uz-4"><input type="file" accept="image/*,.pdf" onchange="handleUp(this,'uz-4','fn-4')">
-              <div class="up-default"><div class="upload-icon">💼</div><p><strong>Estado de cuenta</strong><br>Últimos 3 meses</p></div>
-              <div class="fname" id="fn-4"></div>
-            </div>
-          </div>
-        </div>
-        <div class="form-row" style="max-width:480px">
+        <div class="form-row">
           <div class="field"><label>Número de pasaporte <span class="req">*</span></label><input type="text" placeholder="Ej: GT1234567" id="f-pnum"></div>
           <div class="field"><label>Vencimiento pasaporte <span class="req">*</span></label><input type="date" id="f-pvence"></div>
         </div>
-      </div>
-
-      <div class="fstep-content" id="fs-3">
         <div class="form-row">
           <div class="field"><label>Fecha estimada de viaje <span class="req">*</span></label><input type="date" id="f-fecha-viaje"></div>
           <div class="field"><label>Duración de la estadía <span class="req">*</span></label>
@@ -436,7 +451,7 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
         </div>
       </div>
 
-      <div class="fstep-content" id="fs-4">
+      <div class="fstep-content" id="fs-3">
         <div class="resumen-box">
           <h4>Resumen de tu solicitud</h4>
           <div class="resumen-grid">
@@ -446,6 +461,7 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
             <div class="resumen-field"><span>Correo</span><strong id="r-email">—</strong></div>
             <div class="resumen-field"><span>Teléfono</span><strong id="r-tel">—</strong></div>
             <div class="resumen-field"><span>Pasaporte</span><strong id="r-pass">—</strong></div>
+            <div class="resumen-field"><span>Horario de contacto</span><strong id="r-horario">—</strong></div>
           </div>
         </div>
         <div class="terms-notice">
@@ -459,14 +475,17 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
 
       <div class="success-panel" id="success-panel">
         <div class="success-icon">✅</div>
-        <h3>¡Solicitud enviada!</h3>
-        <p>Hemos recibido tu solicitud. Un asesor de Next Visa 502 te contactará en menos de 24 horas hábiles al WhatsApp <strong>+502 3115-3132</strong>.</p>
+        <h3>¡Solicitud lista!</h3>
+        <p>Se abrió WhatsApp con el resumen de tu solicitud — solo presiona <strong>enviar</strong> en el chat. Un asesor de Next Visa 502 te responderá en menos de 24 horas hábiles.</p>
         <div class="ref-code" id="ref-code">REF-000000</div>
         <p style="margin-top:10px;font-size:12px;color:var(--g400)">Guarda este código para dar seguimiento a tu trámite</p>
+        <p style="margin-top:18px"><a class="btn-gold" id="wa-open" href="#" target="_blank" style="display:inline-block;text-decoration:none">💬 ¿No se abrió? Enviar por WhatsApp</a></p>
       </div>
 
+      <div class="step-error" id="step-error">Por favor completa los campos marcados en rojo.</div>
+
       <div class="form-nav" id="form-nav">
-        <div class="step-info" id="step-info">Paso 1 de 4</div>
+        <div class="step-info" id="step-info">Paso 1 de 3</div>
         <div style="display:flex;gap:10px">
           <button class="btn-back" id="btn-back" onclick="prevStep()" style="display:none">← Anterior</button>
           <button class="btn-next" id="btn-next" onclick="nextStep()">Siguiente →</button>
@@ -487,7 +506,7 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
         <div class="cicon">📱</div>
         <div class="ctext">
           <h4>WhatsApp</h4>
-          <p><a href="https://wa.me/50231153132" target="_blank">+502 3115-3132</a><br>Lun–Vie, 8:00 am – 6:00 pm</p>
+          <p><a href="https://wa.me/50254050683" target="_blank">+502 5405-0683</a><br>Lun–Vie, 8:00 am – 6:00 pm</p>
         </div>
       </div>
       <div class="citem">
@@ -506,7 +525,7 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
     <div class="quick-form">
       <h3>Consulta rápida</h3>
       <div class="qfield"><label>Tu nombre</label><input type="text" placeholder="Nombre completo"></div>
-      <div class="qfield"><label>Correo o WhatsApp</label><input type="text" placeholder="+502 3115-3132"></div>
+      <div class="qfield"><label>Correo o WhatsApp</label><input type="text" placeholder="+502 5405-0683"></div>
       <div class="qfield"><label>Tu consulta</label><textarea placeholder="¿En qué podemos ayudarte?"></textarea></div>
       <button class="btn-gold" style="width:100%;padding:13px;font-size:14px">Enviar consulta ✈</button>
     </div>
@@ -523,9 +542,8 @@ footer p{font-size:12px;color:rgba(255,255,255,0.3)}
 
 <script>
 let country='us',visa='',step=1;
-const TOTAL=4;
-const countryNames={us:'🇺🇸 Estados Unidos',mx:'🇲🇽 México',ca:'🇨🇦 Canadá'};
-const photoSpecs={us:'EE.UU.: 5×5 cm (2×2 pulgadas), fondo blanco.',mx:'México: 3.5×4.5 cm, fondo blanco.',ca:'Canadá: 5×7 cm, fondo blanco o beige.'};
+const TOTAL=3;
+const countryNames={us:'Estados Unidos',mx:'México',ca:'Canadá'};
 const visaInfo={
   'B1/B2':'<strong>Visa B1/B2 — Turismo y negocios:</strong> DS-160, fotografía, pasaporte vigente mín. 6 meses y comprobante de vínculos en Guatemala.',
   'Visitante':'<strong>Visa de turismo México:</strong> Vigencia de 6 meses hasta 10 años según el caso. Documentos personales y comprobante económico.',
@@ -546,19 +564,72 @@ function selectVisa(code,name){
   document.querySelectorAll('.vtype-btn').forEach(b=>b.classList.remove('active'));
   event.currentTarget.classList.add('active');
   document.getElementById('visa-info-txt').innerHTML=visaInfo[code]||('<strong>'+code+':</strong> Completa el formulario y un asesor te contactará.');
-  document.getElementById('photo-notice-txt').innerHTML='<strong>📷 Fotografía personal requerida:</strong> Fondo blanco, frente, sin lentes. Tomada en los últimos 6 meses. '+(photoSpecs[country]||'');
   document.getElementById('form-expanded').classList.add('visible');
   document.getElementById('form-expanded').scrollIntoView({behavior:'smooth',block:'nearest'});
   goToStep(1);
 }
-function handleUp(input,zoneId,nameId){
-  if(input.files&&input.files[0]){
-    document.getElementById(zoneId).classList.add('has-file');
-    document.getElementById(nameId).textContent='✓ '+input.files[0].name;
+function val(id){const el=document.getElementById(id);return el?el.value.trim():''}
+function validateStep(n){
+  const reqs={1:['f-nombre','f-apellido','f-nac','f-lugar','f-genero','f-civil','f-nacion','f-email','f-tel','f-dir','f-horario'],2:['f-pnum','f-pvence','f-fecha-viaje','f-duracion'],3:[]};
+  let bad=[];
+  (reqs[n]||[]).forEach(id=>{
+    const el=document.getElementById(id);
+    el.classList.remove('invalid');
+    if(!el.value.trim())bad.push(el);
+  });
+  const email=document.getElementById('f-email');
+  if(n===1&&email.value.trim()&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()))bad.push(email);
+  const tel=document.getElementById('f-tel');
+  if(n===1&&tel.value.trim()&&tel.value.replace(/\D/g,'').length<8)bad.push(tel);
+  const err=document.getElementById('step-error');
+  if(n===2&&!document.querySelector('input[name=prop]:checked')){
+    err.textContent='Por favor completa los campos marcados en rojo y selecciona el propósito del viaje.';
+    if(bad.length===0){err.classList.add('visible');return false;}
+  }else{
+    err.textContent='Por favor completa los campos marcados en rojo.';
   }
+  if(bad.length){
+    bad.forEach(el=>el.classList.add('invalid'));
+    err.classList.add('visible');
+    bad[0].focus();
+    return false;
+  }
+  err.classList.remove('visible');
+  return true;
+}
+function buildWhatsAppMsg(ref){
+  const prop=document.querySelector('input[name=prop]:checked');
+  const propTxt={turismo:'Turismo / Vacaciones',negocios:'Negocios / Conferencias',familia:'Visita familiar'}[prop?prop.value:'']||'—';
+  const L=[];
+  L.push('🛂 *NUEVA SOLICITUD DE VISA — Next Visa 502*');
+  L.push('Referencia: *'+ref+'*');
+  L.push('');
+  L.push('*Destino:* '+(countryNames[country]||'—'));
+  L.push('*Tipo de visa:* '+(visa||'—'));
+  L.push('');
+  L.push('*— Datos personales —*');
+  L.push('Nombre: '+val('f-nombre')+' '+val('f-apellido'));
+  L.push('Nacimiento: '+val('f-nac')+' · '+val('f-lugar'));
+  L.push('Género: '+val('f-genero')+' · Estado civil: '+val('f-civil'));
+  L.push('Nacionalidad: '+val('f-nacion'));
+  L.push('Correo: '+val('f-email'));
+  L.push('Teléfono: '+val('f-tel'));
+  L.push('Dirección: '+val('f-dir'));
+  L.push('');
+  L.push('*— Pasaporte y viaje —*');
+  L.push('Pasaporte: '+val('f-pnum')+' · Vence: '+val('f-pvence'));
+  L.push('Fecha estimada: '+val('f-fecha-viaje')+' · Estadía: '+val('f-duracion'));
+  L.push('Propósito: '+propTxt);
+  if(val('f-antes'))L.push('¿Ha visitado antes?: '+val('f-antes'));
+  if(val('f-fam'))L.push('Familiares en destino: '+val('f-fam'));
+  if(val('f-notas'))L.push('Notas: '+val('f-notas'));
+  L.push('');
+  L.push('📞 *Contactarme:* '+val('f-horario')+(val('f-medio')?' · Prefiero: '+val('f-medio'):''));
+  return L.join('\n');
 }
 function goToStep(n){
   step=n;
+  document.getElementById('step-error').classList.remove('visible');
   for(let i=1;i<=TOTAL;i++){
     const fc=document.getElementById('fs-'+i);if(fc)fc.classList.toggle('active',i===n);
     const ps=document.getElementById('ps-'+i);
@@ -570,7 +641,7 @@ function goToStep(n){
   if(n===TOTAL){nb.textContent='✈ Enviar solicitud';nb.className='btn-next btn-submit';}
   else{nb.textContent='Siguiente →';nb.className='btn-next';}
 }
-function nextStep(){if(step<TOTAL){goToStep(step+1);if(step===TOTAL)fillResumen();}else submitForm();}
+function nextStep(){if(step<TOTAL){if(!validateStep(step))return;goToStep(step+1);if(step===TOTAL)fillResumen();}else submitForm();}
 function prevStep(){if(step>1)goToStep(step-1);}
 function fillResumen(){
   document.getElementById('r-pais').textContent=countryNames[country]||'—';
@@ -579,14 +650,19 @@ function fillResumen(){
   document.getElementById('r-email').textContent=document.getElementById('f-email').value||'—';
   document.getElementById('r-tel').textContent=document.getElementById('f-tel').value||'—';
   document.getElementById('r-pass').textContent=document.getElementById('f-pnum').value||'—';
+  document.getElementById('r-horario').textContent=document.getElementById('f-horario').value||'—';
 }
 function submitForm(){
   if(!document.getElementById('f-terms').checked){alert('Por favor acepta los términos para continuar.');return;}
-  document.getElementById('ref-code').textContent='REF-'+Math.floor(100000+Math.random()*900000);
+  const ref='REF-'+Math.floor(100000+Math.random()*900000);
+  document.getElementById('ref-code').textContent=ref;
+  const waUrl='https://wa.me/50254050683?text='+encodeURIComponent(buildWhatsAppMsg(ref));
+  document.getElementById('wa-open').href=waUrl;
   for(let i=1;i<=TOTAL;i++){const fc=document.getElementById('fs-'+i);if(fc)fc.classList.remove('active');}
   document.getElementById('success-panel').classList.add('visible');
   document.getElementById('form-nav').style.display='none';
   document.getElementById('form-prog').style.display='none';
+  window.open(waUrl,'_blank');
 }
 function resetForm(){
   step=1;
@@ -595,3 +671,5 @@ function resetForm(){
   document.getElementById('form-prog').style.display='flex';
 }
 </script>
+</body>
+</html>
